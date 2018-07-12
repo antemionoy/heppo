@@ -10,10 +10,9 @@ $(function() {
 
     $('.main-carousel').owlCarousel({
         nav: true,
-        margin: 10,
+        margin: 15,
         items: 3,
-        dots: true
-
+        dots: false
     });
 
 });
