@@ -100,7 +100,10 @@ button {
 }
 
 .hr {
-    &--size-1 {}
+    border: none;
+    color: #e0e0e0;
+    background-color: #e0e0e0;
+    height: 1px;
 }
 
 .header {
@@ -150,6 +153,8 @@ button {
         line-height: normal;
         text-transform: uppercase;
         color: #555454;
+        font-family: 'DaxlinePro';
+        font-weight: 500;
     }
 }
 
@@ -187,8 +192,27 @@ button {
     }
 }
 
+.section-carousel {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/header__bottom--back.png);
+        background-repeat: repeat-x;
+        background-size: contain;
+        background-position: top center;
+        z-index: -1;
+    }
+}
+
+.carousel {
+    padding: 0px 0px 55px;
+}
+
 .main-carousel {
-    margin: 43px 0px 0px;
+    padding: 43px 0px 0px;
     overflow: hidden;
     &__image {
         border-radius: 12px;
@@ -198,7 +222,7 @@ button {
         background-position: center center;
     }
     &__button {
-        width: 365px;
+        width: 390px;
         color: #ffffff;
         font-family: "Akrobat-SemiBold";
         font-size: 30px;
@@ -206,9 +230,13 @@ button {
         text-transform: uppercase;
         letter-spacing: 0.3px;
         background-color: #9cba26;
+        margin: 55px 0px 0px;
         border-radius: 50px;
-        padding: 20px 10px;
+        padding: 17px 13px;
         display: inline-block;
+        background-image: url(../img/btn-back.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
@@ -236,30 +264,48 @@ button {
 }
 
 .additionally {
+    position: relative;
     margin: 65px 0px 0px;
     min-height: 820px;
-    background-image: url(../img/additionally-back.png);
+    background-image: url(../img/add-back.png);
     background-repeat: no-repeat;
     background-size: cover;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #caf41b;
+        z-index: -1;
+    }
 }
 
+.ellipse__top {
+    transform: rotate(180deg);
+}
+
+.ellipse__bottom {
+    position: absolute;
+    bottom: 0;
+}
 
 .discounts {
     margin: 30px 0px 0px;
-
     &__grid {
         margin: 40px 0px 0px;
         justify-content: space-between;
         flex-wrap: wrap;
     }
-
     &__item {
         flex: 0 0 33.33%;
         max-width: 33.33%;
         padding: 0px 40px;
         margin: 0px 0px 62px;
     }
-
     &__circle {
         width: 210px;
         height: 210px;
@@ -267,7 +313,6 @@ button {
         border: 1px solid #cedead;
         margin: 0 auto;
     }
-
     &__title {
         text-align: center;
         font-family: 'Akrobat-Bold';
@@ -276,7 +321,6 @@ button {
         line-height: 24px;
         margin: 16px 0px 0px;
     }
-
     &__text {
         margin: 20px 0px 0px;
         padding: 0px 20px;
@@ -285,13 +329,11 @@ button {
         line-height: 24px;
         color: #89898f;
     }
-
     &__subtitle {
         font-size: 16px;
         color: #abcb29;
         text-align: left;
     }
-
     &__list {
         text-align: left;
         margin-left: 20px;
@@ -302,11 +344,9 @@ button {
     background-color: #fff;
     padding: 0px 0px 100px;
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
-
     &__grid {
         justify-content: space-between;
     }
-
     &__item {
         position: relative;
         flex: 1 1 33.33%;
@@ -321,12 +361,10 @@ button {
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
-
         &:last-child {
             margin-right: 0;
         }
     }
-
     &__info {
         margin-top: 14px;
         padding: 7px 10px 12px;
@@ -336,7 +374,6 @@ button {
         font-size: 28px;
         line-height: 24px;
     }
-
     &__title {
         background-color: #fff;
         border-radius: 5px 5px 0px 0px;
@@ -346,7 +383,6 @@ button {
         color: #49494e;
         font-family: 'Akrobat-Bold';
     }
-
     &__text {
         background-color: #fff;
         border-radius: 0px 5px 5px 5px;
@@ -354,7 +390,6 @@ button {
         font-size: 16px;
         color: #89898f;
     }
-
     &__buttons {
         width: 285px;
         max-width: 100%;
@@ -365,25 +400,20 @@ button {
         justify-content: space-between;
         border-radius: 50px;
     }
-
     &__button {
         border: none;
         background-color: #edeeee;
         font-size: 16px;
         border-radius: 50px;
-
-
         &--check {
             text-transform: uppercase;
             color: #fff;
             padding: 0px 22px;
         }
-
         &--more {
             font-family: 'Akrobat-SemiBold';
             padding: 0px 13px;
         }
-
         &--active {
             background-color: #5d9cbc;
         }
@@ -395,12 +425,9 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-
     &__top {
         position: relative;
     }
-
     &__input {
         width: 345px;
         height: 50px;
@@ -414,7 +441,6 @@ button {
         background-color: #fff;
         outline: none;
     }
-
     &__button {
         position: absolute;
         right: -100px;
@@ -430,7 +456,6 @@ button {
         background-color: #abcb29;
         background: linear-gradient(90deg, #abcb29, #9fd430);
     }
-
     &__check {
         margin: 19px 0px 0px;
         font-size: 14px;
@@ -438,19 +463,46 @@ button {
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         line-height: normal;
+        label {
+            margin-left: 10px;
+        }
     }
-
     &__checkbox {
         color: #302f2f;
-
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        position: relative;
+        outline: none;
         &-link {
             text-decoration: underline;
             color: #302f2f;
         }
+        &:before {
+            content: '';
+            border-radius: 50%;
+            display: inline-block;
+            vertical-align: middle;
+            transform: translate(-3px, -3px);
+            width: 18px;
+            height: 18px;
+            line-height: 10px;
+            text-align: center;
+            border: 2px solid #302f2f;
+            background: #fff;
+            transition: all 0.2s;
+        }
+        &:checked:before {
+            content: '+';
+            position: absolute;
+            color: #302f2f;
+        }
     }
 }
-
-
 
 .callback {
     position: relative;
@@ -464,7 +516,6 @@ button {
     align-items: center;
     color: #fff;
     z-index: 1;
-
     &:before {
         content: '';
         position: absolute;
@@ -479,59 +530,46 @@ button {
         background-size: cover;
         z-index: -1;
     }
-
-
     &__container {
         padding-left: 0;
         padding-right: 0;
     }
-
     &__left {
         flex: 0 1 310px;
     }
-
     &__center {
         flex: 0 1 310px;
     }
-
     &__right {
         flex: auto;
         display: flex;
         justify-content: flex-end;
     }
-
     &__text {
         font-size: 48px;
         line-height: 48px;
         font-family: 'Akrobat-Light';
-
-
         span {
             font-weight: 700;
             font-family: 'Akrobat-Regular';
         }
     }
-
     &__title {
         font-size: 48px;
         line-height: 48px;
         font-family: 'Akrobat-Light';
     }
-
-
     &__form {
         position: relative;
         font-size: 20px;
         width: 435px;
         justify-content: flex-start;
-
         .form__input {
             border-radius: 50px;
             width: 250px;
             padding: 0px 20px;
             border: 0;
         }
-
         .form__button {
             position: absolute;
             left: auto;
@@ -539,31 +577,46 @@ button {
             top: 0;
             bottom: 0;
             border-radius: 50px;
-            background: linear-gradient(to left, #ff7f00, #ff9a00);
+            background: linear-gradient(90deg, #ff7f00, #ff9a00 80%);
             color: #FFF;
             border: 0;
             font-size: 20px;
         }
-
         .form__check {
             margin: 15px 0px 0px;
+            label {
+                color: #fff;
+            }
+        }
+        .form__checkbox {
+            color: #fff;
+            &-link {
+                text-decoration: underline;
+                color: #fff;
+            }
+            &:before {
+                background: transparent;
+                border: 2px solid #fff;
+                background: #a6c649;
+            }
+            &:checked:before {
+                content: '+';
+                color: #fff;
+            }
         }
     }
 }
-
 
 .reviews {
     margin: 120px 0px 0px;
     padding: 0px 0px 20px;
     background-color: #fff;
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
-
     &__grid {
         margin: 42px 0px 0px;
         justify-content: space-between;
         flex-wrap: wrap;
     }
-
     &__circle {
         position: relative;
         width: 210px;
@@ -573,7 +626,6 @@ button {
         box-shadow: inset 0 0 0 10px #fff;
         margin: 0 auto;
     }
-
     &__image {
         position: absolute;
         top: 50%;
@@ -583,8 +635,6 @@ button {
         width: 186px;
         height: 186px;
     }
-
-
     &__item {
         flex: 0 0 33.33%;
         max-width: 33.33%;
@@ -592,25 +642,21 @@ button {
         margin: 0px 0px 75px;
         text-align: center;
     }
-
     &__name {
         margin: 18px 0px 0px;
         font-size: 20px;
         line-height: 24px;
         font-family: 'Akrobat-Bold';
     }
-
     &__stars {
         margin: 13px 0px 0px;
     }
-
     &__text {
         margin: 14px 0px 0px;
         font-size: 16px;
         line-height: 24px;
         padding: 0px 25px;
     }
-
     &__button {
         display: inline-block;
         margin: 25px 0px 0px;
@@ -627,12 +673,10 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
     &__title {
         color: #fff;
         margin: 0px 0px 18px;
     }
-
     &__subtitle {
         font-family: 'Akrobat-ExtraLight';
         font-size: 54px;
@@ -640,13 +684,11 @@ button {
         color: #fff;
         text-align: center;
     }
-
     &__grid {
         justify-content: space-between;
         margin: 15px 0px 0px;
         flex-wrap: wrap;
     }
-
     &__item {
         margin: 15px 0px 0px;
         flex: 0 1 265px;
@@ -657,14 +699,12 @@ button {
         padding: 10px;
         text-align: center;
     }
-
     &__image {
         width: 100%;
         height: auto;
         max-width: 100%;
         border-radius: 12px;
     }
-
     &__distance {
         font-family: 'Akrobat-Bold';
         font-size: 20px;
@@ -672,7 +712,6 @@ button {
         margin: 18px 0px 0px;
         padding: 0px 15px;
     }
-
     &__text {
         margin: 10px 0px 0px;
         font-size: 16px;
@@ -680,7 +719,6 @@ button {
         color: #89898f;
         padding: 0px 15px 15px;
     }
-
     &__inset {
         background-color: #fff;
         height: 100%;
@@ -688,16 +726,13 @@ button {
     }
 }
 
-
 .application {
     background-image: url(../img/application-back.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 60px 0px 0px;
+    padding: 60px 0px 65px;
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
-
-
     &__title {
         text-align: center;
         color: #302f2f;
@@ -705,41 +740,54 @@ button {
         font-size: 48px;
         line-height: 48px;
         margin: 0px 0px 30px;
-
         span {
             font-family: 'Akrobat-SemiBold';
         }
     }
-
     &__form {
         padding: 0px 0px 35px;
         border-bottom: 2px dotted #a5a6ab;
     }
 }
 
-
-
 .social {
     padding: 38px 0px 0px;
     margin: 0 auto;
     flex: 0 1 800px;
     max-width: 800px;
+    &__text {
+        font-family: 'Akrobat-Light';
+        font-size: 24px;
+        line-height: 24px;
+        flex: 0 0 350px;
+        max-width: 350px;
+    }
 }
-
 
 .qa {
     margin: 60px 0px 0px;
-
+    &__grid {
+        flex-wrap: wrap;
+    }
     &__circle {
         flex: 0 0 48px;
     }
-
     &__item {
         flex-direction: row;
-        flex: 0 1 calc(25% - 25px);
-        max-width: calc(25% - 25px);
+        flex: 0 1 25%;
+        max-width: 25%;
+        margin: 0px 0px 72px;
+        padding-right: 30px;
+        &--text {
+            padding-left: 50px;
+            font-size: 12px;
+            line-height: 16px;
+            color: #302f2f;
+        }
+        &--button-box {
+            padding-left: 50px;
+        }
     }
-
     &__circle {
         border: 1px dashed #a5a6ab;
         width: 48px;
@@ -747,21 +795,28 @@ button {
         border-radius: 50%;
         margin-right: 10px;
     }
-
-
     &__title {
         font-size: 20px;
         line-height: 24px;
         color: #49494e;
         font-family: 'Akrobat-Bold';
     }
-
     &__button {
         display: inline-block;
         margin: 13px 0px 0px;
         font-size: 16px;
         font-family: 'Akrobat-SemiBold';
         color: #92af19;
+        &--set {
+            margin: 0;
+            font-family: 'Akrobat-Bold';
+            color: #fff;
+            font-size: 20px;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #ff7f00, #ff9a00 80%);
+            padding: 13px 12px;
+            border-radius: 50px;
+        }
     }
 }
 
