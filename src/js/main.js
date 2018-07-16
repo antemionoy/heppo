@@ -1,10 +1,10 @@
 //= ../../bower_components/jquery/dist/jquery.min.js
 //= ../../bower_components/owl.carousel/dist/owl.carousel.min.js
+//= ../../bower_components/remodal/dist/remodal.min.js
+//= ../../bower_components/fancybox/dist/jquery.fancybox.js
 
 
 "use strict";
-
-
 
 function init_map() {
     var myOptions = {
@@ -39,5 +39,11 @@ $(function() {
         items: 3,
         dots: false
     });
+
+     $('[data-remodal-id=modal]').remodal();
+     $('[data-fancybox="gallery"]').fancybox({
+     	smallBtn: false,
+     	toolbar: false
+     });
 
 });

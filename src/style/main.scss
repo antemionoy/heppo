@@ -1,5 +1,14 @@
 /*=../../bower_components/owl.carousel/dist/assets/owl.carousel.css*/
 
+
+/*=../../bower_components/remodal/dist/remodal-default-theme.css*/
+
+
+/*=../../bower_components/remodal/dist/remodal.css*/
+
+
+/*=../../bower_components/fancybox/dist/jquery.fancybox.css*/
+
 @import "partials/vars";
 @import "partials/mixin";
 @import "partials/fonts";
@@ -85,6 +94,10 @@ button {
     cursor: pointer;
 }
 
+.title-box {
+    position: relative;
+}
+
 .title-main {
     font-size: 92px;
     margin: 0px 0px 32px;
@@ -108,10 +121,28 @@ button {
 
 .header {
     &__top {
+        position: relative;
+        padding: 28px 0px 31px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -27px;
+            left: 0;
+            right: 0;
+            background-image: url(../img/header-back.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 27px;
+        }
+    }
+
+    &__grid {
         justify-content: space-between;
         align-items: center;
-        padding: 28px 0px 31px;
     }
+
     &__col {
         justify-content: space-between;
         &--center {
@@ -122,17 +153,26 @@ button {
     }
     &__item {
         flex-direction: column;
+        align-items: flex-start;
     }
     &__number {
+        font-family: 'DaxlinePro';
+        font-weight: 500;
         font-size: 16px;
         color: #555454;
+
         span {
             font-size: 26px;
         }
     }
+
     &__callback {
         font-size: 12px;
+        font-family: 'DaxlinePro';
+        color: #585858;
+        border-bottom: 1px dashed #636363;
     }
+
     &__bottom {
         background-image: url(../img/header__bottom--back.png);
         background-repeat: no-repeat;
@@ -182,7 +222,16 @@ button {
     &__title {
         font-size: 110px;
         text-transform: uppercase;
+        font-family: 'Akrobat-ExtraLight';
+        font-weight: 300;
+
+        span {
+            font-family: 'Akrobat-Bold';
+            font-weight: 700;
+        }
     }
+
+
     &__bottom {
         justify-content: space-between;
         width: 100%;
@@ -220,6 +269,11 @@ button {
         width: 344px;
         height: 245px;
         background-position: center center;
+        display: block;
+
+        img {
+            display: none;
+        }
     }
     &__button {
         width: 390px;
@@ -258,18 +312,29 @@ button {
     }
     &__item {
         flex: 0 1 25%;
+        max-width: 25%;
         text-align: center;
         margin: 65px auto 0px;
+    }
+
+    &__text {
+        margin: 12px 0px 0px;
+        font-family: 'DaxlinePro';
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        text-align: center;
     }
 }
 
 .additionally {
     position: relative;
     margin: 65px 0px 0px;
-    min-height: 820px;
-    background-image: url(../img/add-back.png);
+    background-image: url(../img/additionally-back.png);
     background-repeat: no-repeat;
     background-size: cover;
+    color: #fff;
+
     &:after {
         content: '';
         position: absolute;
@@ -279,9 +344,108 @@ button {
         right: 0;
         width: 100%;
         height: 100%;
-        background-color: #caf41b;
+        background-color: #718623;
         z-index: -1;
     }
+
+    &__container {
+        padding: 0px 0px 65px;
+    }
+
+    &__grid {
+        width: 100%;
+
+
+        &--three-element {
+
+            .additionally__text {
+                // flex: 0 0 33.33%;
+                // max-width: 33.33%;
+            }
+        }
+
+        &--four-element {
+
+            .additionally__text {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+        }
+    }
+
+    &__row {
+        margin-bottom: 40px;
+        align-items: center;
+
+        &--shrink {
+            padding-left: 82px;
+        }
+    }
+
+    &__circle {
+        flex: 0 0 260px;
+        position: relative;
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        border: 1px dashed #cdd8a3;
+
+        &--small {
+            flex: 0 0 175px;
+            width: 175px;
+            height: 175px;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 242px;
+        height: 242px;
+        border-radius: 50%;
+
+        &--small {
+            width: 157px;
+            height: 157px;
+        }
+    }
+
+    &__title {
+        font-family: 'Akrobat-Light';
+        font-size: 44px;
+        margin-bottom: 23px;
+    }
+
+    &__content {
+        margin-left: 50px;
+    }
+
+    &__text {
+        padding-right: 30px;
+        font-family: 'DaxlinePro';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__p {
+
+        padding: 0px 0px 12px;
+        margin: 0px 0px 12px;
+        border-bottom: 1px dashed #fff;
+
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.ellipse {
+    height: 100px;
+    width: 100%;
 }
 
 .ellipse__top {
@@ -428,7 +592,8 @@ button {
     &__top {
         position: relative;
     }
-    &__input {
+    &__input,
+    &__textarea {
         width: 345px;
         height: 50px;
         border: 1px solid #e1e1e1;
@@ -441,6 +606,15 @@ button {
         background-color: #fff;
         outline: none;
     }
+
+
+    &__textarea {
+        height: 155px;
+        border-radius: 30px;
+        resize: none;
+    }
+
+
     &__button {
         position: absolute;
         right: -100px;
@@ -465,6 +639,7 @@ button {
         line-height: normal;
         label {
             margin-left: 10px;
+            cursor: pointer;
         }
     }
     &__checkbox {
@@ -497,9 +672,12 @@ button {
             transition: all 0.2s;
         }
         &:checked:before {
-            content: '+';
+            content: '✓';
             position: absolute;
             color: #302f2f;
+            font-size: 10px;
+            padding-top: 2px;
+            font-weight: 700;
         }
     }
 }
@@ -564,16 +742,18 @@ button {
         font-size: 20px;
         width: 435px;
         justify-content: flex-start;
+        align-items: flex-start;
         .form__input {
+            margin-left: 0;
             border-radius: 50px;
-            width: 250px;
+            width: 345px;
             padding: 0px 20px;
             border: 0;
         }
         .form__button {
             position: absolute;
             left: auto;
-            right: 50px;
+            right: 0px;
             top: 0;
             bottom: 0;
             border-radius: 50px;
@@ -600,7 +780,7 @@ button {
                 background: #a6c649;
             }
             &:checked:before {
-                content: '+';
+                content: '✓';
                 color: #fff;
             }
         }
@@ -663,8 +843,32 @@ button {
         font-family: 'Akrobat-SemiBold';
         font-size: 16px;
         color: #744915;
+        border-bottom: 1px solid #744915;
+        border-radius: 40px;
+        width: 170px;
+        height: 30px;
     }
 }
+
+.message {
+    position: absolute;
+    top: -40px;
+    right: 135px;
+    font-family: 'Akrobat-Bold';
+    font-size: 17px;
+    padding: 20px 25px 30px;
+    background-image: url(../img/message-back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+    &__link {
+        display: block;
+        text-decoration: underline;
+        color: #a8c94a;
+    }
+}
+
 
 .places {
     min-height: 1040px;
@@ -677,6 +881,7 @@ button {
         color: #fff;
         margin: 0px 0px 18px;
     }
+
     &__subtitle {
         font-family: 'Akrobat-ExtraLight';
         font-size: 54px;
@@ -684,11 +889,13 @@ button {
         color: #fff;
         text-align: center;
     }
+
     &__grid {
         justify-content: space-between;
         margin: 15px 0px 0px;
         flex-wrap: wrap;
     }
+
     &__item {
         margin: 15px 0px 0px;
         flex: 0 1 265px;
@@ -699,12 +906,14 @@ button {
         padding: 10px;
         text-align: center;
     }
+
     &__image {
         width: 100%;
         height: auto;
         max-width: 100%;
         border-radius: 12px;
     }
+
     &__distance {
         font-family: 'Akrobat-Bold';
         font-size: 20px;
@@ -712,6 +921,7 @@ button {
         margin: 18px 0px 0px;
         padding: 0px 15px;
     }
+
     &__text {
         margin: 10px 0px 0px;
         font-size: 16px;
@@ -719,6 +929,7 @@ button {
         color: #89898f;
         padding: 0px 15px 15px;
     }
+
     &__inset {
         background-color: #fff;
         height: 100%;
@@ -744,6 +955,7 @@ button {
             font-family: 'Akrobat-SemiBold';
         }
     }
+
     &__form {
         padding: 0px 0px 35px;
         border-bottom: 2px dotted #a5a6ab;
@@ -769,9 +981,11 @@ button {
     &__grid {
         flex-wrap: wrap;
     }
+
     &__circle {
         flex: 0 0 48px;
     }
+
     &__item {
         flex-direction: row;
         flex: 0 1 25%;
@@ -788,6 +1002,7 @@ button {
             padding-left: 50px;
         }
     }
+
     &__circle {
         border: 1px dashed #a5a6ab;
         width: 48px;
@@ -795,18 +1010,21 @@ button {
         border-radius: 50%;
         margin-right: 10px;
     }
+
     &__title {
         font-size: 20px;
         line-height: 24px;
         color: #49494e;
         font-family: 'Akrobat-Bold';
     }
+
     &__button {
         display: inline-block;
         margin: 13px 0px 0px;
         font-size: 16px;
         font-family: 'Akrobat-SemiBold';
         color: #92af19;
+        border: none;
         &--set {
             margin: 0;
             font-family: 'Akrobat-Bold';
@@ -821,13 +1039,132 @@ button {
 }
 
 .map {
+    position: relative;
     width: 100%;
     min-height: 630px;
     position: relative;
     border-top: 7px solid #93b644;
+
+    &__info{
+        position: absolute;
+        top: 35%;
+        left: 60%;
+        z-index: 100;
+    }
 }
 
 #gmap_canvas {
     min-height: 630px;
     width: 100%;
+}
+
+.remodal-close {
+    top: -75px;
+    left: 50%;
+    width: 55px;
+    height: 55px;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.28);
+    background-color: #fff;
+    border-radius: 50%;
+
+
+    &:before {
+        color: #abcb29;
+        font-size: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.fancybox {
+
+    &-bg {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+
+
+.remodal {
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.28);
+    border-radius: 12px;
+    padding: 34px 45px 44px;
+
+    &__title {
+        font-size: 48px;
+        color: #5b5b5c;
+        font-family: 'Akrobat-Light';
+        font-weight: 300;
+    }
+
+    &__text {
+        text-align: left;
+        margin-right: 30px;
+        font-size: 16px;
+    }
+
+    &__form {
+
+        .form__input {
+            margin: 23px 0px 0px;
+            width: auto;
+            flex: 0 1 calc(33.33% - 30px);
+            max-width: 33.33%;
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .form__textarea {
+            margin: 30px 0px 0px;
+            padding: 15px 20px;
+            width: auto;
+            flex: 1 1 100%;
+            width: 100%;
+        }
+
+        .form__check {
+            font-size: 12px;
+            margin-top: 0;
+            margin-right: 30px;
+            display: flex;
+            align-items: center;
+
+            .form__checkbox-link {
+                display: inline;
+            }
+        }
+
+        .qa__button {
+            width: 180px;
+            margin-left: 20px
+        }
+    }
+
+    &__grid {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__bottom {
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 25px 0px;
+    }
+}
+
+.remodal-overlay {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+@media only screen and (min-width: 641px) {
+    .remodal {
+        max-width: 905px;
+    }
 }
