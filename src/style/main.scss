@@ -7,7 +7,7 @@
 /*=../../bower_components/remodal/dist/remodal.css*/
 
 
-/*=../../bower_components/fancybox/dist/jquery.fancybox.css*/
+/*=../../bower_components/magnific-popup/dist/magnific-popup.css*/
 
 @import "partials/vars";
 @import "partials/mixin";
@@ -25,6 +25,10 @@
 
 a {
     text-decoration: none;
+}
+
+html {
+    margin-right: 0 !important;
 }
 
 html,
@@ -123,7 +127,6 @@ button {
     &__top {
         position: relative;
         padding: 28px 0px 31px;
-
         &:before {
             content: '';
             position: absolute;
@@ -137,12 +140,10 @@ button {
             height: 27px;
         }
     }
-
     &__grid {
         justify-content: space-between;
         align-items: center;
     }
-
     &__col {
         justify-content: space-between;
         &--center {
@@ -160,19 +161,16 @@ button {
         font-weight: 500;
         font-size: 16px;
         color: #555454;
-
         span {
             font-size: 26px;
         }
     }
-
     &__callback {
         font-size: 12px;
         font-family: 'DaxlinePro';
         color: #585858;
         border-bottom: 1px dashed #636363;
     }
-
     &__bottom {
         background-image: url(../img/header__bottom--back.png);
         background-repeat: no-repeat;
@@ -224,14 +222,11 @@ button {
         text-transform: uppercase;
         font-family: 'Akrobat-ExtraLight';
         font-weight: 300;
-
         span {
             font-family: 'Akrobat-Bold';
             font-weight: 700;
         }
     }
-
-
     &__bottom {
         justify-content: space-between;
         width: 100%;
@@ -270,7 +265,6 @@ button {
         height: 245px;
         background-position: center center;
         display: block;
-
         img {
             display: none;
         }
@@ -316,7 +310,6 @@ button {
         text-align: center;
         margin: 65px auto 0px;
     }
-
     &__text {
         margin: 12px 0px 0px;
         font-family: 'DaxlinePro';
@@ -334,7 +327,6 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-
     &:after {
         content: '';
         position: absolute;
@@ -347,41 +339,31 @@ button {
         background-color: #718623;
         z-index: -1;
     }
-
     &__container {
         padding: 0px 0px 65px;
     }
-
     &__grid {
         width: 100%;
-
-
         &--three-element {
-
             .additionally__text {
                 // flex: 0 0 33.33%;
                 // max-width: 33.33%;
             }
         }
-
         &--four-element {
-
             .additionally__text {
                 flex: 0 0 25%;
                 max-width: 25%;
             }
         }
     }
-
     &__row {
         margin-bottom: 40px;
         align-items: center;
-
         &--shrink {
             padding-left: 82px;
         }
     }
-
     &__circle {
         flex: 0 0 260px;
         position: relative;
@@ -389,14 +371,12 @@ button {
         height: 260px;
         border-radius: 50%;
         border: 1px dashed #cdd8a3;
-
         &--small {
             flex: 0 0 175px;
             width: 175px;
             height: 175px;
         }
     }
-
     &__image {
         position: absolute;
         top: 50%;
@@ -405,23 +385,19 @@ button {
         width: 242px;
         height: 242px;
         border-radius: 50%;
-
         &--small {
             width: 157px;
             height: 157px;
         }
     }
-
     &__title {
         font-family: 'Akrobat-Light';
         font-size: 44px;
         margin-bottom: 23px;
     }
-
     &__content {
         margin-left: 50px;
     }
-
     &__text {
         padding-right: 30px;
         font-family: 'DaxlinePro';
@@ -429,13 +405,10 @@ button {
         font-size: 16px;
         line-height: 24px;
     }
-
     &__p {
-
         padding: 0px 0px 12px;
         margin: 0px 0px 12px;
         border-bottom: 1px dashed #fff;
-
         &:last-child {
             border-bottom: none;
             padding-bottom: 0;
@@ -532,7 +505,7 @@ button {
     &__info {
         margin-top: 14px;
         padding: 7px 10px 12px;
-        border-radius: 5px;
+        border-radius: 7px;
         background-color: #fff;
         font-family: 'Akrobat-SemiBold';
         font-size: 28px;
@@ -540,7 +513,7 @@ button {
     }
     &__title {
         background-color: #fff;
-        border-radius: 5px 5px 0px 0px;
+        border-radius: 7px 7px 0px 0px;
         padding: 7px 10px;
         font-size: 20px;
         line-height: 24px;
@@ -548,8 +521,9 @@ button {
         font-family: 'Akrobat-Bold';
     }
     &__text {
+        font-family: 'DaxlinePro';
         background-color: #fff;
-        border-radius: 0px 5px 5px 5px;
+        border-radius: 0px 7px 7px 7px;
         padding: 7px 10px 12px;
         font-size: 16px;
         color: #89898f;
@@ -577,6 +551,8 @@ button {
         &--more {
             font-family: 'Akrobat-SemiBold';
             padding: 0px 13px;
+            color: #744915;
+            font-size: 16px;
         }
         &--active {
             background-color: #5d9cbc;
@@ -606,15 +582,11 @@ button {
         background-color: #fff;
         outline: none;
     }
-
-
     &__textarea {
         height: 155px;
         border-radius: 30px;
         resize: none;
     }
-
-
     &__button {
         position: absolute;
         right: -100px;
@@ -861,14 +833,12 @@ button {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-
     &__link {
         display: block;
         text-decoration: underline;
         color: #a8c94a;
     }
 }
-
 
 .places {
     min-height: 1040px;
@@ -881,7 +851,6 @@ button {
         color: #fff;
         margin: 0px 0px 18px;
     }
-
     &__subtitle {
         font-family: 'Akrobat-ExtraLight';
         font-size: 54px;
@@ -889,13 +858,11 @@ button {
         color: #fff;
         text-align: center;
     }
-
     &__grid {
         justify-content: space-between;
         margin: 15px 0px 0px;
         flex-wrap: wrap;
     }
-
     &__item {
         margin: 15px 0px 0px;
         flex: 0 1 265px;
@@ -906,14 +873,12 @@ button {
         padding: 10px;
         text-align: center;
     }
-
     &__image {
         width: 100%;
         height: auto;
         max-width: 100%;
         border-radius: 12px;
     }
-
     &__distance {
         font-family: 'Akrobat-Bold';
         font-size: 20px;
@@ -921,7 +886,6 @@ button {
         margin: 18px 0px 0px;
         padding: 0px 15px;
     }
-
     &__text {
         margin: 10px 0px 0px;
         font-size: 16px;
@@ -929,7 +893,6 @@ button {
         color: #89898f;
         padding: 0px 15px 15px;
     }
-
     &__inset {
         background-color: #fff;
         height: 100%;
@@ -955,7 +918,6 @@ button {
             font-family: 'Akrobat-SemiBold';
         }
     }
-
     &__form {
         padding: 0px 0px 35px;
         border-bottom: 2px dotted #a5a6ab;
@@ -981,11 +943,9 @@ button {
     &__grid {
         flex-wrap: wrap;
     }
-
     &__circle {
         flex: 0 0 48px;
     }
-
     &__item {
         flex-direction: row;
         flex: 0 1 25%;
@@ -1002,7 +962,6 @@ button {
             padding-left: 50px;
         }
     }
-
     &__circle {
         border: 1px dashed #a5a6ab;
         width: 48px;
@@ -1010,14 +969,12 @@ button {
         border-radius: 50%;
         margin-right: 10px;
     }
-
     &__title {
         font-size: 20px;
         line-height: 24px;
         color: #49494e;
         font-family: 'Akrobat-Bold';
     }
-
     &__button {
         display: inline-block;
         margin: 13px 0px 0px;
@@ -1044,8 +1001,7 @@ button {
     min-height: 630px;
     position: relative;
     border-top: 7px solid #93b644;
-
-    &__info{
+    &__info {
         position: absolute;
         top: 35%;
         left: 60%;
@@ -1067,8 +1023,6 @@ button {
     box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.28);
     background-color: #fff;
     border-radius: 50%;
-
-
     &:before {
         color: #abcb29;
         font-size: 40px;
@@ -1080,46 +1034,37 @@ button {
 }
 
 .fancybox {
-
     &-bg {
         background-color: rgba(255, 255, 255, 0.7);
     }
 }
 
-
-
 .remodal {
     box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.28);
     border-radius: 12px;
     padding: 34px 45px 44px;
-
     &__title {
         font-size: 48px;
         color: #5b5b5c;
         font-family: 'Akrobat-Light';
         font-weight: 300;
     }
-
     &__text {
         text-align: left;
         margin-right: 30px;
         font-size: 16px;
     }
-
     &__form {
-
         .form__input {
             margin: 23px 0px 0px;
             width: auto;
             flex: 0 1 calc(33.33% - 30px);
             max-width: 33.33%;
             margin-right: 30px;
-
             &:last-child {
                 margin-right: 0;
             }
         }
-
         .form__textarea {
             margin: 30px 0px 0px;
             padding: 15px 20px;
@@ -1127,30 +1072,25 @@ button {
             flex: 1 1 100%;
             width: 100%;
         }
-
         .form__check {
             font-size: 12px;
             margin-top: 0;
             margin-right: 30px;
             display: flex;
             align-items: center;
-
             .form__checkbox-link {
                 display: inline;
             }
         }
-
         .qa__button {
             width: 180px;
             margin-left: 20px
         }
     }
-
     &__grid {
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
     &__bottom {
         justify-content: space-between;
         align-items: center;
@@ -1162,9 +1102,40 @@ button {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-
 @media only screen and (min-width: 641px) {
     .remodal {
         max-width: 905px;
     }
+}
+
+.mfp-bg {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.mfp-container {
+    padding: 0px;
+}
+
+img.mfp-img {
+    border: 11px solid #fff;
+    border-radius: 12px;
+    padding: 0px;
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.28);
+}
+
+.mfp-iframe-holder .mfp-close,
+.mfp-image-holder .mfp-close {
+    color: #abcb29;
+    top: -75px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    width: 55px;
+    height: 55px;
+padding: 0px;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.28);
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 42px;
 }

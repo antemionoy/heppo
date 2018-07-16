@@ -6,7 +6,7 @@
     "Anton Zavdorodniy <antemionoy@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/antemionoy/heppo",
   "ignore": [
     "**/.*",
     "node_modules",

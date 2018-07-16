@@ -1,7 +1,8 @@
 //= ../../bower_components/jquery/dist/jquery.min.js
 //= ../../bower_components/owl.carousel/dist/owl.carousel.min.js
 //= ../../bower_components/remodal/dist/remodal.min.js
-//= ../../bower_components/fancybox/dist/jquery.fancybox.js
+//= ../../bower_components/magnific-popup/dist/jquery.magnific-popup.js
+
 
 
 "use strict";
@@ -40,10 +41,13 @@ $(function() {
         dots: false
     });
 
-     $('[data-remodal-id=modal]').remodal();
-     $('[data-fancybox="gallery"]').fancybox({
-     	smallBtn: false,
-     	toolbar: false
-     });
+    $('[data-remodal-id=modal]').remodal();
+
+    $('.image-link').magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
 
 });
