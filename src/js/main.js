@@ -27,8 +27,31 @@ function init_map() {
 }
 
 
+function qa() {
+
+	$('.qa__button').on('click', function(e){
+		e.preventDefault();
+
+		var findEl = $(this).parent().parent();
+
+		findEl.find('.qa__circle').addClass('qa__circle--open');
+		findEl.find('.qa__full').addClass('qa__full--open');
+
+	});
+
+	$('.qa__button--curtail').on('click', function(e){
+		e.preventDefault();
+
+		$(this).parent().parent().find('.qa__circle').removeClass('qa__circle--open');
+		$(this).parent().parent().find('.qa__full').removeClass('qa__full--open');
+
+	});
+}
+
 
 $(function() {
+
+	qa();
 
     if (typeof(google) != 'undefined') {
         google.maps.event.addDomListener(window, 'load', init_map);
