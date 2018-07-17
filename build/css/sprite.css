@@ -1,0 +1,210 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-address-icon {
+  background-image: url(sprite.png);
+  background-position: -551px -116px;
+  width: 15px;
+  height: 18px;
+}
+.icon-banya-icon {
+  background-image: url(sprite.png);
+  background-position: -72px -165px;
+  width: 35px;
+  height: 38px;
+}
+.icon-book-png {
+  background-image: url(sprite.png);
+  background-position: -142px -57px;
+  width: 15px;
+  height: 14px;
+}
+.icon-brakcet-icon {
+  background-image: url(sprite.png);
+  background-position: 0px -165px;
+  width: 12px;
+  height: 90px;
+}
+.icon-btn-phone-icon {
+  background-image: url(sprite.png);
+  background-position: -479px -116px;
+  width: 21px;
+  height: 21px;
+}
+.icon-calian-icon {
+  background-image: url(sprite.png);
+  background-position: -122px -165px;
+  width: 36px;
+  height: 36px;
+}
+.icon-clock-icon {
+  background-image: url(sprite.png);
+  background-position: -258px -165px;
+  width: 13px;
+  height: 19px;
+}
+.icon-discount-line-dotted {
+  background-image: url(sprite.png);
+  background-position: -406px -17px;
+  width: 245px;
+  height: 2px;
+}
+.icon-kacheli-icon {
+  background-image: url(sprite.png);
+  background-position: -68px -116px;
+  width: 49px;
+  height: 34px;
+}
+.icon-mangal-icon {
+  background-image: url(sprite.png);
+  background-position: -27px -165px;
+  width: 30px;
+  height: 46px;
+}
+.icon-menu-icon-1 {
+  background-image: url(sprite.png);
+  background-position: -215px -116px;
+  width: 23px;
+  height: 23px;
+}
+.icon-menu-icon-2 {
+  background-image: url(sprite.png);
+  background-position: -253px -116px;
+  width: 23px;
+  height: 23px;
+}
+.icon-menu-icon-3 {
+  background-image: url(sprite.png);
+  background-position: -291px -116px;
+  width: 23px;
+  height: 23px;
+}
+.icon-menu-icon-4 {
+  background-image: url(sprite.png);
+  background-position: -367px -116px;
+  width: 23px;
+  height: 23px;
+}
+.icon-menu-icon-5 {
+  background-image: url(sprite.png);
+  background-position: -329px -116px;
+  width: 23px;
+  height: 23px;
+}
+.icon-menu-icon-6 {
+  background-image: url(sprite.png);
+  background-position: -405px -116px;
+  width: 23px;
+  height: 22px;
+}
+.icon-menu-icon-7 {
+  background-image: url(sprite.png);
+  background-position: -223px -165px;
+  width: 20px;
+  height: 23px;
+}
+.icon-more-icon {
+  background-image: url(sprite.png);
+  background-position: -581px -116px;
+  width: 15px;
+  height: 16px;
+}
+.icon-people-icon {
+  background-image: url(sprite.png);
+  background-position: 0px -116px;
+  width: 53px;
+  height: 34px;
+}
+.icon-phone-icon {
+  background-image: url(sprite.png);
+  background-position: -132px -116px;
+  width: 26px;
+  height: 25px;
+}
+.icon-places-line-dotted {
+  background-image: url(sprite.png);
+  background-position: -666px -17px;
+  width: 99px;
+  height: 2px;
+}
+.icon-promo-btn-bottom {
+  background-image: url(sprite.png);
+  background-position: 0px -17px;
+  width: 222px;
+  height: 25px;
+}
+.icon-promo-line {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 1097px;
+  height: 2px;
+}
+.icon-qa-btn-bottom {
+  background-image: url(sprite.png);
+  background-position: 0px -57px;
+  width: 127px;
+  height: 14px;
+}
+.icon-qa-button-icon {
+  background-image: url(sprite.png);
+  background-position: -202px -57px;
+  width: 15px;
+  height: 13px;
+}
+.icon-qa-icon {
+  background-image: url(sprite.png);
+  background-position: -173px -116px;
+  width: 27px;
+  height: 24px;
+}
+.icon-qa-main-button-icon {
+  background-image: url(sprite.png);
+  background-position: -515px -116px;
+  width: 21px;
+  height: 19px;
+}
+.icon-rev-btn-bottom {
+  background-image: url(sprite.png);
+  background-position: -237px -17px;
+  width: 154px;
+  height: 14px;
+}
+.icon-rocket-icon {
+  background-image: url(sprite.png);
+  background-position: -443px -116px;
+  width: 21px;
+  height: 21px;
+}
+.icon-sead-icon {
+  background-image: url(sprite.png);
+  background-position: -173px -165px;
+  width: 35px;
+  height: 36px;
+}
+.icon-stars-icon {
+  background-image: url(sprite.png);
+  background-position: 0px -86px;
+  width: 105px;
+  height: 15px;
+}
+.icon-svernut-icon {
+  background-image: url(sprite.png);
+  background-position: -172px -57px;
+  width: 15px;
+  height: 14px;
+}
