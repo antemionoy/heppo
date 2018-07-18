@@ -6,44 +6,56 @@
                 <div class="promo__top">
                     <div class="promo__info">
                         <h2 class="promo__title">Коттедж <span>у озера</span></h2>
-                        <div class="promo__descr">новый 4-х комнатный коттедж со всеми удобствами</div>
+                        <div class="promo__descr">новый 4-х комнатный коттедж <span>со всеми удобствами</span></div>
                     </div>
                 </div>
                 <div class="promo__bottom d-flex">
-                    <div class="promo__item">
-                        Вместимость
-                        <br>11 человек
+                    <div class="promo__item d-flex">
+                        <i class="promo__icon icon icon-people-icon"></i>
+                        <div class="promo__text">
+                            Вместимость
+                            <br>11 человек
+                        </div>
                     </div>
-                    <div class="promo__item">
-                        Баня/Сауна внутри
-                        <br> дома
+                    <div class="promo__item d-flex">
+                        <i class="promo__icon icon icon-banya-icon"></i>
+                        <div class="promo__text">
+                            Баня/Сауна внутри
+                            <br> дома
+                        </div>
                     </div>
-                    <div class="promo__item">
-                        Мангал
-                        <br> и барбекю
+                    <div class="promo__item d-flex">
+                        <i class="promo__icon icon icon-mangal-icon"></i>
+                        <div class="promo__text">
+                            Мангал
+                            <br> и барбекю
+                        </div>
                     </div>
-                    <div class="promo__item">
-                        Профессиональный
-                        <br> и качели
+                    <div class="promo__item d-flex">
+                        <i class="promo__icon icon icon-kacheli-icon"></i>
+                        <div class="promo__text">
+                            Профессиональный
+                            <br>батут и качели
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <section class="section-carousel">
-        <div class="carousel">
+        <div id="carousel" class="carousel">
             <div class="container">
                 <div class="main-carousel">
-                    <a href="img/main-slider__one.jpg" class="main-carousel__image image-link" data-fancybox="gallery" style="background-image: url(img/main-slider__one.jpg);">
+                    <a href="img/main-slider__one.jpg" class="main-carousel__image image-link" style="background-image: url(img/main-slider__one.jpg);">
                         <img src="img/main-slider__one.jpg" alt="" />
                     </a>
-                    <a href="img/main-slider__two.jpg" class="main-carousel__image image-link" data-fancybox="gallery" style="background-image: url(img/main-slider__two.jpg);">
+                    <a href="img/main-slider__two.jpg" class="main-carousel__image image-link" style="background-image: url(img/main-slider__two.jpg);">
                         <img src="img/main-slider__two.jpg" alt="" />
                     </a>
-                    <a href="img/main-slider__three.jpg" class="main-carousel__image image-link" data-fancybox="gallery" style="background-image: url(img/main-slider__three.jpg);">
+                    <a href="img/main-slider__three.jpg" class="main-carousel__image image-link" style="background-image: url(img/main-slider__three.jpg);">
                         <img src="img/main-slider__three.jpg" alt="" />
                     </a>
-                    <a href="img/main-slider__one.jpg" class="main-carousel__image image-link" data-fancybox="gallery" style="background-image: url(img/main-slider__one.jpg);">
+                    <a href="img/main-slider__one.jpg" class="main-carousel__image image-link" style="background-image: url(img/main-slider__one.jpg);">
                         <img src="img/main-slider__one.jpg" alt="" />
                     </a>
                 </div>
@@ -109,7 +121,7 @@
             </div>
         </div>
     </section>
-    <div class="additionally">
+    <div id="additionally" class="additionally">
         <svg class="ellipse ellipse__top">
             <ellipse rx="60%" ry="50%" cx="50%" cy="100%" fill="#fff">
             </ellipse>
@@ -179,7 +191,7 @@
             </ellipse>
         </svg>
     </div>
-    <div class="discounts">
+    <div id="discounts" class="discounts">
         <div class="container">
             <h2 class="title-main">Бонусы и Скидки</h2>
             <div class="discounts__grid d-flex">
@@ -260,9 +272,9 @@
             <hr class="hr">
         </div>
     </div>
-    <div class="price">
+    <div id="price" class="price">
         <div class="container">
-            <h2 class="title-main">Цены бронирования коттеджа</h2>
+            <h2 class="price__title-main title-main">Цены бронирования коттеджа</h2>
             <div class="price__grid d-flex">
                 <div class="price__item" style="background-image: url(img/price-image.jpg);">
                     <div class="price__title">
@@ -327,7 +339,7 @@
             <div class="callback__right d-flex">
                 <form class="form callback__form" action="#" method="#">
                     <input class="form__input" type="text" placeholder="Номер вашего телефона" required>
-                    <button class="form__button form__button--icon-phone" type="submit">Позвоните мне</button>
+                    <button class="form__button form__button--icon-phone" data-remodal-target="modal-send" type="submit">Позвоните мне</button>
                     <div class="form__check">
                         <input id="form__checkbox" class="form__checkbox" type="checkbox">
                         <label for="form__checkbox">прочитал и согласен с <a href="#" class="form__checkbox-link">условиями обработки данных</a></label>
@@ -336,10 +348,10 @@
             </div>
         </div>
     </div>
-    <div class="reviews">
+    <div id="reviews" class="reviews">
         <div class="container">
             <div class="title-box">
-                <div class="title-main">Отзывы гостей</div>
+                <div class="reviews__title title-main">Отзывы гостей</div>
                 <div class="message">Ещё больше отзывов <a href="#" class="message__link">на Booking.com</a>
                     <span class="triangle"></span>
                 </div>
@@ -516,8 +528,8 @@
             <div class="application__title">Оставьте заявку на ознакомительную экскурсию, и мы <span>бесплатно проведем ее для вас!</span></div>
             <form action="#" class="form application__form">
                 <div class="form__top">
-                    <input type="text" class="form__input" placeholder="Представьтесь, пожалуйста">
-                    <input type="text" class="form__input" placeholder="Номер вашего телефона">
+                    <input type="text" class="form__input" placeholder="Представьтесь, пожалуйста" required>
+                    <input type="text" class="form__input" placeholder="Номер вашего телефона" required>
                     <button class="form__button form__button--icon-rocket" type="submit">Отправить заявку</button>
                 </div>
                 <div class="form__check">
@@ -551,7 +563,7 @@
     </div>
     <div class="qa">
         <div class="container">
-            <div class="title-main">Часто задаваемые вопросы</div>
+            <div class="qa__title-main title-main">Часто задаваемые вопросы</div>
             <div class="qa__grid d-flex">
                 <div class="qa__item d-flex">
                     <div class="qa__circle">
@@ -696,11 +708,13 @@
                         <a href="#" class="qa__button">Читать ответ</a>
                     </div>
                 </div>
-                <div class="qa__item qa__item--text d-flex">
-                    Не нашли ответа? Заполните форму, а мы свяжемся с Вами в ближайшее время и ответим на все вопросы 
-                </div>
-                <div class="qa__item qa__item--button-box">
-                    <a href="#" data-remodal-target="modal-qa" class="qa__button qa__button--set">Задать вопрос</a>
+                <div class="qa__item--box d-flex">
+                    <div class="qa__item qa__item--text d-flex">
+                        Не нашли ответа? Заполните форму, а мы свяжемся с Вами в ближайшее время и ответим на все вопросы 
+                    </div>
+                    <div class="qa__item qa__item--button-box d-flex">
+                        <a href="#" data-remodal-target="modal-qa" class="button">Задать вопрос</a>
+                    </div>
                 </div>
             </div>
         </div>

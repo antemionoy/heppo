@@ -1,5 +1,5 @@
 <footer>
-    <div class="map">
+    <div id="contacts" class="map">
         <div class="map__info">
             <div class="map__address">
                 ЛО, п. Токсово, переулок Озерный, 1
@@ -28,11 +28,11 @@
         <div class="remodal__grid d-flex">
             <div class="form__element form__element--width-100">
                 <input type="text" class="form__input form__input--width-100" required>
-                <label for="#" class="form__label form__important form__label--input-label" >Ваше имя</label>
+                <label for="#" class="form__label form__important form__label--input-label">Ваше имя</label>
             </div>
             <div class="form__element form__element--width-100">
                 <input type="text" class="form__input form__input--width-100" required>
-                <label for="#" class="form__label form__important form__label--input-label" >Ваш e-mail</label>
+                <label for="#" class="form__label form__important form__label--input-label">Ваш e-mail</label>
             </div>
             <div class="form__element form__element--width-100">
                 <input type="text" placeholder="Номер вашего телефона" class="form__input form__input--width-100">
@@ -48,7 +48,7 @@
                 <input id="form__checkbox-4" class="form__checkbox" type="checkbox">
                 <label for="form__checkbox-4">прочитал и согласен с <a href="#" class="form__checkbox-link">условиями<br> обработки персональных данных</a></label>
             </div>
-            <button type="submit" class="qa__button qa__button--set">Задать вопрос</button>
+            <button type="submit" class="button">Задать вопрос</button>
         </div>
     </form>
 </div>
@@ -109,7 +109,7 @@
                 </div>
                 <div class="form__element form__element--width-100">
                     <input type="text" class="form__input form__input--width-100" required>
-                    <label for="#" class="form__label form__important form__label--input-label" >Номер вашего телефона</label>
+                    <label for="#" class="form__label form__important form__label--input-label">Номер вашего телефона</label>
                 </div>
                 <textarea placeholder="Коментарий к брони" class="form__textarea form__textarea--small"></textarea>
             </div>
@@ -122,9 +122,19 @@
                     <input id="form__checkbox-4" class="form__checkbox" type="checkbox">
                     <label for="form__checkbox-4">прочитал и согласен с <a href="#" class="form__checkbox-link">условиями<br> обработки персональных данных</a></label>
                 </div>
-                <button type="submit" class="qa__button qa__button--set">Задать вопрос</button>
+                <button type="submit" class="button">Задать вопрос</button>
             </div>
         </form>
+    </div>
+</div>
+<div class="remodal" data-remodal-id="modal-send">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <h2 class="remodal__title">Ваше сообщение отправлено</h2>
+    <div class="remodal__subtitle">
+        Ма свяжемся с Вами в ближайшее время
+    </div>
+    <div class="remodal__bottom">
+            <a href="#" class="button">Cпасибо жду звонка</a>
     </div>
 </div>
 <script src="js/main.js"></script>

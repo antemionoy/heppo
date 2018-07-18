@@ -61,7 +61,32 @@ $(function() {
         nav: true,
         margin: 15,
         items: 3,
-        dots: false
+        dots: false,
+        responsive: {
+            320: {
+                items: 1,
+                nav: false
+            },
+
+            500: {
+                items: 2
+            },
+
+            768: {
+                items: 3
+            },
+
+            1023: {
+                items: 3
+            },
+            1200: {
+                items: 3
+            },
+
+            1420: {
+                items: 3
+            }
+        }
     });
 
     $('[data-remodal-id=modal]').remodal();
@@ -76,15 +101,13 @@ $(function() {
     $('.js-scrollToEl').on('click', function(e) {
         e.preventDefault();
 
-        var $to = $($(this).attr('href'));
-
-        if (!$to.length){
-            return;
-        }
+        var to = $($(this).attr('href'));
 
         $('body,html').animate({
-            scrollTop: $to.offset().top,
+            scrollTop: to.offset().top,
         }, 800);
+
+
     });
 
 });

@@ -18,18 +18,19 @@
                 <div class="container">
                     <div class="header__grid d-flex">
                         <div class="header__col">
-                            <a href="#" class="logo header__logo">
-                                <img src="../img/logo.png" alt="logo">
+                            <a href="#" class="header__logo">
+                                <img class="logo" src="../img/logo.png" alt="logo">
                             </a>
                         </div>
                         <div class="header__col header__col--center d-flex">
                             <div class="header__item d-flex">
+                                <i class="header__icon icon icon-phone-icon"></i>
                                 <a href="#" class="header__number">
                                     +7 (931) <span>201-80-40</span>
                                 </a>
                                 <a href="#" class="header__callback">
-                            Заказать обратный звонок
-                        </a>
+                                    Заказать обратный звонок
+                                </a>
                             </div>
                             <div class="header__item">
                                 <a href="#" class="header__number">
@@ -53,26 +54,33 @@
             <div class="header__bottom">
                 <div class="container">
                     <nav class="menu header__menu d-flex">
-                        <a href="#" class="menu__link js-scrollToEl">
-                             Описание
+                        <a href="additionally" class="menu__link d-flex js-scrollToEl">
+                            <i class="menu__icon icon icon-menu-icon-1"></i>
+                            <span class="menu__text">Описание</span>
                         </a>
-                        <a href="#" class="menu__link js-scrollToEl">
-                             Бонусы и скидки
+                        <a href="#discounts" class="menu__link d-flex js-scrollToEl">
+                            <i class="menu__icon icon icon-menu-icon-2"></i>
+                            <span class="menu__text">Бонусы и скидки</span>
                         </a>
-                        <a href="#" class="menu__link js-scrollToEl">
-                            Цены
+                        <a href="#price" class="menu__link d-flex js-scrollToEl">
+                            <i class="menu__icon icon icon-menu-icon-3"></i>
+                            <span class="menu__text">Цены</span>
                         </a>
-                        <a href=".reviews" class="menu__link js-scrollToEl">
-                            Отзывы
+                        <a href="#reviews" class="menu__link d-flex js-scrollToEl">
+                            <i class="menu__icon icon icon-menu-icon-4"></i>
+                            <span class="menu__text">Отзывы</span>
                         </a>
-                        <a href="#" class="menu__link">
-                            Контакты
+                        <a href="#contacts" class="menu__link d-flex js-scrollToEl">
+                            <i class="menu__icon icon icon-menu-icon-5"></i>
+                            <span class="menu__text">Контакты</span>
                         </a>
-                        <a href="#" class="menu__link">
-                            Посмотреть коттедж
+                        <a href="#" class="menu__link d-flex js-scrollToEl">
+                            <i class="menu__icon icon icon-menu-icon-6"></i>
+                            <span class="menu__text">Посмотреть коттедж</span>
                         </a>
-                        <a href="#" class="menu__link">
-                            Фотогалерея
+                        <a href="#carousel" class="menu__link d-flex js-scrollToEl">
+                            <i class="menu__icon icon icon-menu-icon-7"></i>
+                            <span class="menu__text">Фотогалерея</span>
                         </a>
                     </nav>
                 </div>
@@ -85,44 +93,56 @@
                 <div class="promo__top">
                     <div class="promo__info">
                         <h2 class="promo__title">Коттедж <span>у озера</span></h2>
-                        <div class="promo__descr">новый 4-х комнатный коттедж со всеми удобствами</div>
+                        <div class="promo__descr">новый 4-х комнатный коттедж <span>со всеми удобствами</span></div>
                     </div>
                 </div>
                 <div class="promo__bottom d-flex">
-                    <div class="promo__item">
-                        Вместимость
-                        <br>11 человек
+                    <div class="promo__item d-flex">
+                        <i class="promo__icon icon icon-people-icon"></i>
+                        <div class="promo__text">
+                            Вместимость
+                            <br>11 человек
+                        </div>
                     </div>
-                    <div class="promo__item">
-                        Баня/Сауна внутри
-                        <br> дома
+                    <div class="promo__item d-flex">
+                        <i class="promo__icon icon icon-banya-icon"></i>
+                        <div class="promo__text">
+                            Баня/Сауна внутри
+                            <br> дома
+                        </div>
                     </div>
-                    <div class="promo__item">
-                        Мангал
-                        <br> и барбекю
+                    <div class="promo__item d-flex">
+                        <i class="promo__icon icon icon-mangal-icon"></i>
+                        <div class="promo__text">
+                            Мангал
+                            <br> и барбекю
+                        </div>
                     </div>
-                    <div class="promo__item">
-                        Профессиональный
-                        <br> и качели
+                    <div class="promo__item d-flex">
+                        <i class="promo__icon icon icon-kacheli-icon"></i>
+                        <div class="promo__text">
+                            Профессиональный
+                            <br>батут и качели
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <section class="section-carousel">
-        <div class="carousel">
+        <div id="carousel" class="carousel">
             <div class="container">
                 <div class="main-carousel">
-                    <a href="img/main-slider__one.jpg" class="main-carousel__image image-link" data-fancybox="gallery" style="background-image: url(img/main-slider__one.jpg);">
+                    <a href="img/main-slider__one.jpg" class="main-carousel__image image-link" style="background-image: url(img/main-slider__one.jpg);">
                         <img src="img/main-slider__one.jpg" alt="" />
                     </a>
-                    <a href="img/main-slider__two.jpg" class="main-carousel__image image-link" data-fancybox="gallery" style="background-image: url(img/main-slider__two.jpg);">
+                    <a href="img/main-slider__two.jpg" class="main-carousel__image image-link" style="background-image: url(img/main-slider__two.jpg);">
                         <img src="img/main-slider__two.jpg" alt="" />
                     </a>
-                    <a href="img/main-slider__three.jpg" class="main-carousel__image image-link" data-fancybox="gallery" style="background-image: url(img/main-slider__three.jpg);">
+                    <a href="img/main-slider__three.jpg" class="main-carousel__image image-link" style="background-image: url(img/main-slider__three.jpg);">
                         <img src="img/main-slider__three.jpg" alt="" />
                     </a>
-                    <a href="img/main-slider__one.jpg" class="main-carousel__image image-link" data-fancybox="gallery" style="background-image: url(img/main-slider__one.jpg);">
+                    <a href="img/main-slider__one.jpg" class="main-carousel__image image-link" style="background-image: url(img/main-slider__one.jpg);">
                         <img src="img/main-slider__one.jpg" alt="" />
                     </a>
                 </div>
@@ -188,7 +208,7 @@
             </div>
         </div>
     </section>
-    <div class="additionally">
+    <div id="additionally" class="additionally">
         <svg class="ellipse ellipse__top">
             <ellipse rx="60%" ry="50%" cx="50%" cy="100%" fill="#fff">
             </ellipse>
@@ -258,7 +278,7 @@
             </ellipse>
         </svg>
     </div>
-    <div class="discounts">
+    <div id="discounts" class="discounts">
         <div class="container">
             <h2 class="title-main">Бонусы и Скидки</h2>
             <div class="discounts__grid d-flex">
@@ -339,9 +359,9 @@
             <hr class="hr">
         </div>
     </div>
-    <div class="price">
+    <div id="price" class="price">
         <div class="container">
-            <h2 class="title-main">Цены бронирования коттеджа</h2>
+            <h2 class="price__title-main title-main">Цены бронирования коттеджа</h2>
             <div class="price__grid d-flex">
                 <div class="price__item" style="background-image: url(img/price-image.jpg);">
                     <div class="price__title">
@@ -406,7 +426,7 @@
             <div class="callback__right d-flex">
                 <form class="form callback__form" action="#" method="#">
                     <input class="form__input" type="text" placeholder="Номер вашего телефона" required>
-                    <button class="form__button form__button--icon-phone" type="submit">Позвоните мне</button>
+                    <button class="form__button form__button--icon-phone" data-remodal-target="modal-send" type="submit">Позвоните мне</button>
                     <div class="form__check">
                         <input id="form__checkbox" class="form__checkbox" type="checkbox">
                         <label for="form__checkbox">прочитал и согласен с <a href="#" class="form__checkbox-link">условиями обработки данных</a></label>
@@ -415,10 +435,10 @@
             </div>
         </div>
     </div>
-    <div class="reviews">
+    <div id="reviews" class="reviews">
         <div class="container">
             <div class="title-box">
-                <div class="title-main">Отзывы гостей</div>
+                <div class="reviews__title title-main">Отзывы гостей</div>
                 <div class="message">Ещё больше отзывов <a href="#" class="message__link">на Booking.com</a>
                     <span class="triangle"></span>
                 </div>
@@ -595,8 +615,8 @@
             <div class="application__title">Оставьте заявку на ознакомительную экскурсию, и мы <span>бесплатно проведем ее для вас!</span></div>
             <form action="#" class="form application__form">
                 <div class="form__top">
-                    <input type="text" class="form__input" placeholder="Представьтесь, пожалуйста">
-                    <input type="text" class="form__input" placeholder="Номер вашего телефона">
+                    <input type="text" class="form__input" placeholder="Представьтесь, пожалуйста" required>
+                    <input type="text" class="form__input" placeholder="Номер вашего телефона" required>
                     <button class="form__button form__button--icon-rocket" type="submit">Отправить заявку</button>
                 </div>
                 <div class="form__check">
@@ -630,7 +650,7 @@
     </div>
     <div class="qa">
         <div class="container">
-            <div class="title-main">Часто задаваемые вопросы</div>
+            <div class="qa__title-main title-main">Часто задаваемые вопросы</div>
             <div class="qa__grid d-flex">
                 <div class="qa__item d-flex">
                     <div class="qa__circle">
@@ -775,18 +795,20 @@
                         <a href="#" class="qa__button">Читать ответ</a>
                     </div>
                 </div>
-                <div class="qa__item qa__item--text d-flex">
-                    Не нашли ответа? Заполните форму, а мы свяжемся с Вами в ближайшее время и ответим на все вопросы 
-                </div>
-                <div class="qa__item qa__item--button-box">
-                    <a href="#" data-remodal-target="modal-qa" class="qa__button qa__button--set">Задать вопрос</a>
+                <div class="qa__item--box d-flex">
+                    <div class="qa__item qa__item--text d-flex">
+                        Не нашли ответа? Заполните форму, а мы свяжемся с Вами в ближайшее время и ответим на все вопросы 
+                    </div>
+                    <div class="qa__item qa__item--button-box d-flex">
+                        <a href="#" data-remodal-target="modal-qa" class="button">Задать вопрос</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </main>
 <footer>
-    <div class="map">
+    <div id="contacts" class="map">
         <div class="map__info">
             <div class="map__address">
                 ЛО, п. Токсово, переулок Озерный, 1
@@ -815,11 +837,11 @@
         <div class="remodal__grid d-flex">
             <div class="form__element form__element--width-100">
                 <input type="text" class="form__input form__input--width-100" required>
-                <label for="#" class="form__label form__important form__label--input-label" >Ваше имя</label>
+                <label for="#" class="form__label form__important form__label--input-label">Ваше имя</label>
             </div>
             <div class="form__element form__element--width-100">
                 <input type="text" class="form__input form__input--width-100" required>
-                <label for="#" class="form__label form__important form__label--input-label" >Ваш e-mail</label>
+                <label for="#" class="form__label form__important form__label--input-label">Ваш e-mail</label>
             </div>
             <div class="form__element form__element--width-100">
                 <input type="text" placeholder="Номер вашего телефона" class="form__input form__input--width-100">
@@ -835,7 +857,7 @@
                 <input id="form__checkbox-4" class="form__checkbox" type="checkbox">
                 <label for="form__checkbox-4">прочитал и согласен с <a href="#" class="form__checkbox-link">условиями<br> обработки персональных данных</a></label>
             </div>
-            <button type="submit" class="qa__button qa__button--set">Задать вопрос</button>
+            <button type="submit" class="button">Задать вопрос</button>
         </div>
     </form>
 </div>
@@ -896,7 +918,7 @@
                 </div>
                 <div class="form__element form__element--width-100">
                     <input type="text" class="form__input form__input--width-100" required>
-                    <label for="#" class="form__label form__important form__label--input-label" >Номер вашего телефона</label>
+                    <label for="#" class="form__label form__important form__label--input-label">Номер вашего телефона</label>
                 </div>
                 <textarea placeholder="Коментарий к брони" class="form__textarea form__textarea--small"></textarea>
             </div>
@@ -909,9 +931,19 @@
                     <input id="form__checkbox-4" class="form__checkbox" type="checkbox">
                     <label for="form__checkbox-4">прочитал и согласен с <a href="#" class="form__checkbox-link">условиями<br> обработки персональных данных</a></label>
                 </div>
-                <button type="submit" class="qa__button qa__button--set">Задать вопрос</button>
+                <button type="submit" class="button">Задать вопрос</button>
             </div>
         </form>
+    </div>
+</div>
+<div class="remodal" data-remodal-id="modal-send">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <h2 class="remodal__title">Ваше сообщение отправлено</h2>
+    <div class="remodal__subtitle">
+        Ма свяжемся с Вами в ближайшее время
+    </div>
+    <div class="remodal__bottom">
+            <a href="#" class="button">Cпасибо жду звонка</a>
     </div>
 </div>
 <script src="js/main.js"></script>
