@@ -22,7 +22,7 @@ function init_map() {
     ms0 = new google.maps.Marker({
         position: new google.maps.LatLng(60.159938, 30.552295),
         map: map,
-        icon: '/img/marker.png'
+        icon: '../img/marker.png'
     });
 }
 
@@ -33,6 +33,9 @@ function qa() {
         e.preventDefault();
 
         var findEl = $(this).parent().parent();
+
+        $('.qa__circle').removeClass('qa__circle--open');
+        $('.qa__full').removeClass('qa__full--open');
 
         findEl.find('.qa__circle').addClass('qa__circle--open');
         findEl.find('.qa__full').addClass('qa__full--open');
@@ -49,8 +52,21 @@ function qa() {
 }
 
 
-$(function() {
+function menu() {
 
+    $(".hamburger").click(function() {
+        $(this).toggleClass("is-active");
+        $(this).closest('header').find('.header__bottom').toggleClass('header__bottom--active');
+    });
+
+    $('.menu__link').click(function(){
+        $('.header__bottom').removeClass('header__bottom--active');
+        $('.hamburger').toggleClass("is-active");
+    });
+}
+
+$(function() {
+    menu();
     qa();
 
     if (typeof(google) != 'undefined') {
@@ -64,8 +80,7 @@ $(function() {
         dots: false,
         responsive: {
             320: {
-                items: 1,
-                nav: false
+                items: 1
             },
 
             500: {
@@ -106,7 +121,6 @@ $(function() {
         $('body,html').animate({
             scrollTop: to.offset().top,
         }, 800);
-
 
     });
 
