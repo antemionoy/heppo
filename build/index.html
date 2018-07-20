@@ -19,6 +19,9 @@
                 <span class="line"></span>
                 <span class="line"></span>
             </div>
+            <a href="tel:+79312018040" class="header__number header__number--mobile">
+                <img src="img/phone-icon--green.png" alt="phone">
+            </a>
             <div class="header__top">
                 <div class="container">
                     <div class="header__grid d-flex">
@@ -30,7 +33,7 @@
                         <div class="header__col header__col--center d-flex">
                             <div class="header__item d-flex">
                                 <i class="header__icon icon icon-phone-icon"></i>
-                                <a href="#" class="header__number">
+                                <a href="tel:+79312018040" class="header__number">
                                     +7 (931) <span>201-80-40</span>
                                 </a>
                                 <a href="#" class="header__callback">
@@ -38,7 +41,7 @@
                                 </a>
                             </div>
                             <div class="header__item">
-                                <a href="#" class="header__number">
+                                <a href="tel:+79219009294" class="header__number">
                                      +7 (921) <span>900-92-94</span>
                                  </a>
                             </div>
@@ -48,7 +51,7 @@
                                 <div class="header__address">
                                     ЛО, п. Токсово, пер. Озерный, 1
                                 </div>
-                                <a href="#" class="header__callback">
+                                <a href="#contacts" class="header__callback js-scrollToEl">
                                     Показать на карте
                                 </a>
                             </div>
@@ -103,28 +106,28 @@
                 </div>
                 <div class="promo__bottom d-flex">
                     <div class="promo__item d-flex">
-                        <i class="promo__icon icon icon-people-icon"></i>
+                        <img src="img/people-icon.png" alt="">
                         <div class="promo__text">
                             Вместимость
                             <br>11 человек
                         </div>
                     </div>
                     <div class="promo__item d-flex">
-                        <i class="promo__icon icon icon-banya-icon"></i>
+                        <img src="img/banya-icon.png" alt="">
                         <div class="promo__text">
                             Баня/Сауна внутри
                             <br> дома
                         </div>
                     </div>
                     <div class="promo__item d-flex">
-                        <i class="promo__icon icon icon-mangal-icon"></i>
+                        <img src="img/mangal-icon.png" alt="">
                         <div class="promo__text">
                             Мангал
                             <br> и барбекю
                         </div>
                     </div>
                     <div class="promo__item d-flex">
-                        <i class="promo__icon icon icon-kacheli-icon"></i>
+                        <img src="img/kacheli-icon.png" alt="">
                         <div class="promo__text">
                             Профессиональный
                             <br>батут и качели
@@ -292,7 +295,7 @@
                         <img src="img/discount-image--1.png" alt="discounts__image" class="discounts__image">
                     </div>
                     <div class="discounts__title">Скидка 10%
-                        <br> предостовляеться</div>
+                        <br> предоставляется</div>
                     <div class="discounts__text">
                         Для студентов ВУЗов, семей с детьми, именинникам. К сожалению, не действует по будням
                     </div>
@@ -334,30 +337,27 @@
                     <div class="discounts__circle">
                         <img src="img/discount-image--4.png" alt="discounts__image" class="discounts__image">
                     </div>
-                    <div class="discounts__title">Скидка 10%
-                        <br> предостовляеться</div>
+                    <div class="discounts__title">Cрочное бронирование</div>
                     <div class="discounts__text">
-                        Для студентов ВУЗов, семей с детьми, именинникам. К сожалению, не действует по будням
+                        При бронировании за сутки до предполагаемой даты заезда – скидка 25%!
                     </div>
                 </div>
                 <div class="discounts__item">
                     <div class="discounts__circle">
                         <img src="img/discount-image--5.png" alt="discounts__image" class="discounts__image">
                     </div>
-                    <div class="discounts__title">Скидка 10%
-                        <br> предостовляеться</div>
+                    <div class="discounts__title">Подарок</div>
                     <div class="discounts__text">
-                        Для студентов ВУЗов, семей с детьми, именинникам. К сожалению, не действует по будням
+                        При бронировании коттеджа на 3 будних дня – заказ кальяна на 1200 рублей в подарок!
                     </div>
                 </div>
                 <div class="discounts__item">
                     <div class="discounts__circle">
                         <img src="img/discount-image--6.png" alt="discounts__image" class="discounts__image">
                     </div>
-                    <div class="discounts__title">Скидка 10%
-                        <br> предостовляеться</div>
+                    <div class="discounts__title">Экскурсия</div>
                     <div class="discounts__text">
-                        Для студентов ВУЗов, семей с детьми, именинникам. К сожалению, не действует по будням
+                        Проведем бесплатную ознакомительную экскурсию
                     </div>
                 </div>
             </div>
@@ -433,7 +433,7 @@
                     <input class="form__input" type="text" placeholder="Номер вашего телефона" required>
                     <button class="form__button form__button--icon-phone" data-remodal-target="modal-send" type="submit">Позвоните мне</button>
                     <div class="form__check">
-                        <input id="form__checkbox" class="form__checkbox" type="checkbox">
+                        <input id="form__checkbox" class="form__checkbox" type="checkbox" checked="checked">
                         <label for="form__checkbox">прочитал и согласен с <a href="#" class="form__checkbox-link">условиями обработки данных</a></label>
                     </div>
                 </form>
@@ -617,7 +617,7 @@
     </div>
     <div class="application">
         <div class="container">
-            <div class="application__title">Оставьте заявку на ознакомительную экскурсию, и мы <span>бесплатно проведем ее для вас!</span></div>
+            <div class="application__title">Оставьте заявку на ознакомительную экскурсию и мы <span>бесплатно проведем ее для вас!</span></div>
             <form action="#" class="form application__form">
                 <div class="form__top">
                     <input type="text" class="form__input" placeholder="Представьтесь, пожалуйста" required>
@@ -625,13 +625,13 @@
                     <button class="form__button form__button--icon-rocket" type="submit">Отправить заявку</button>
                 </div>
                 <div class="form__check">
-                    <input id="form__checkbox-2" class="form__checkbox" type="checkbox">
+                    <input id="form__checkbox-2" class="form__checkbox" type="checkbox" checked="checked">
                     <label for="form__checkbox-2">прочитал и согласен с <a href="#" class="form__checkbox-link">условиями обработки данных</a></label>
                 </div>
             </form>
             <div class="social d-flex">
                 <div class="social__text">
-                    Расскажите о нас друзьям, и получите скидку при следующем заселении!
+                    Расскажите о нас друзьям и получите скидку при следующем заселении!
                 </div>
                 <div class="social__icons d-flex">
                     <a href="#" class="social__link">
@@ -733,38 +733,16 @@
                         </div>
                         <a href="#" class="qa__button">Читать ответ</a>
                     </div>
-                </div>
-                <div class="qa__item d-flex">
-                    <div class="qa__circle">
-                        <i class="qa__icon"></i>
-                    </div>
-                    <div class="qa__info">
+                    <div class="qa__full">
+                        <div class="circle"></div>
                         <div class="qa__title">
-                            Нужно ли платить за баню отдельно?
+                            Нужно ли платить за
+                            <br>баню отдельно?
                         </div>
-                        <a href="#" class="qa__button">Читать ответ</a>
-                    </div>
-                </div>
-                <div class="qa__item d-flex">
-                    <div class="qa__circle">
-                        <i class="qa__icon"></i>
-                    </div>
-                    <div class="qa__info">
-                        <div class="qa__title">
-                            Нужно ли платить за баню отдельно?
+                        <div class="qa__text">
+                            <span class="qa__bold">Баня абсолютно бесплатна.</span> Нет никаких ограничений в пользовании баней: дро- ва, подстилки, шапочки, полотенца, ве- ники — входят в стоимость. В это трудно поверить, но это так.
                         </div>
-                        <a href="#" class="qa__button">Читать ответ</a>
-                    </div>
-                </div>
-                <div class="qa__item d-flex">
-                    <div class="qa__circle">
-                        <i class="qa__icon"></i>
-                    </div>
-                    <div class="qa__info">
-                        <div class="qa__title">
-                            Нужно ли платить за баню отдельно?
-                        </div>
-                        <a href="#" class="qa__button">Читать ответ</a>
+                        <a href="#" class="qa__button qa__button--curtail">Cвернуть</a>
                     </div>
                 </div>
                 <div class="qa__item d-flex">
@@ -777,6 +755,17 @@
                         </div>
                         <a href="#" class="qa__button">Читать ответ</a>
                     </div>
+                    <div class="qa__full">
+                        <div class="circle"></div>
+                        <div class="qa__title">
+                            Нужно ли платить за
+                            <br>баню отдельно?
+                        </div>
+                        <div class="qa__text">
+                            <span class="qa__bold">Баня абсолютно бесплатна.</span> Нет никаких ограничений в пользовании баней: дро- ва, подстилки, шапочки, полотенца, ве- ники — входят в стоимость. В это трудно поверить, но это так.
+                        </div>
+                        <a href="#" class="qa__button qa__button--curtail">Cвернуть</a>
+                    </div>
                 </div>
                 <div class="qa__item d-flex">
                     <div class="qa__circle">
@@ -788,6 +777,17 @@
                         </div>
                         <a href="#" class="qa__button">Читать ответ</a>
                     </div>
+                    <div class="qa__full">
+                        <div class="circle"></div>
+                        <div class="qa__title">
+                            Нужно ли платить за
+                            <br>баню отдельно?
+                        </div>
+                        <div class="qa__text">
+                            <span class="qa__bold">Баня абсолютно бесплатна.</span> Нет никаких ограничений в пользовании баней: дро- ва, подстилки, шапочки, полотенца, ве- ники — входят в стоимость. В это трудно поверить, но это так.
+                        </div>
+                        <a href="#" class="qa__button qa__button--curtail">Cвернуть</a>
+                    </div>
                 </div>
                 <div class="qa__item d-flex">
                     <div class="qa__circle">
@@ -798,11 +798,88 @@
                             Нужно ли платить за баню отдельно?
                         </div>
                         <a href="#" class="qa__button">Читать ответ</a>
+                    </div>
+                    <div class="qa__full">
+                        <div class="circle"></div>
+                        <div class="qa__title">
+                            Нужно ли платить за
+                            <br>баню отдельно?
+                        </div>
+                        <div class="qa__text">
+                            <span class="qa__bold">Баня абсолютно бесплатна.</span> Нет никаких ограничений в пользовании баней: дро- ва, подстилки, шапочки, полотенца, ве- ники — входят в стоимость. В это трудно поверить, но это так.
+                        </div>
+                        <a href="#" class="qa__button qa__button--curtail">Cвернуть</a>
+                    </div>
+                </div>
+                <div class="qa__item d-flex">
+                    <div class="qa__circle">
+                        <i class="qa__icon"></i>
+                    </div>
+                    <div class="qa__info">
+                        <div class="qa__title">
+                            Нужно ли платить за баню отдельно?
+                        </div>
+                        <a href="#" class="qa__button">Читать ответ</a>
+                    </div>
+                    <div class="qa__full">
+                        <div class="circle"></div>
+                        <div class="qa__title">
+                            Нужно ли платить за
+                            <br>баню отдельно?
+                        </div>
+                        <div class="qa__text">
+                            <span class="qa__bold">Баня абсолютно бесплатна.</span> Нет никаких ограничений в пользовании баней: дро- ва, подстилки, шапочки, полотенца, ве- ники — входят в стоимость. В это трудно поверить, но это так.
+                        </div>
+                        <a href="#" class="qa__button qa__button--curtail">Cвернуть</a>
+                    </div>
+                </div>
+                <div class="qa__item d-flex">
+                    <div class="qa__circle">
+                        <i class="qa__icon"></i>
+                    </div>
+                    <div class="qa__info">
+                        <div class="qa__title">
+                            Нужно ли платить за баню отдельно?
+                        </div>
+                        <a href="#" class="qa__button">Читать ответ</a>
+                    </div>
+                    <div class="qa__full">
+                        <div class="circle"></div>
+                        <div class="qa__title">
+                            Нужно ли платить за
+                            <br>баню отдельно?
+                        </div>
+                        <div class="qa__text">
+                            <span class="qa__bold">Баня абсолютно бесплатна.</span> Нет никаких ограничений в пользовании баней: дро- ва, подстилки, шапочки, полотенца, ве- ники — входят в стоимость. В это трудно поверить, но это так.
+                        </div>
+                        <a href="#" class="qa__button qa__button--curtail">Cвернуть</a>
+                    </div>
+                </div>
+                                <div class="qa__item d-flex">
+                    <div class="qa__circle">
+                        <i class="qa__icon"></i>
+                    </div>
+                    <div class="qa__info">
+                        <div class="qa__title">
+                            Нужно ли платить за баню отдельно?
+                        </div>
+                        <a href="#" class="qa__button">Читать ответ</a>
+                    </div>
+                    <div class="qa__full">
+                        <div class="circle"></div>
+                        <div class="qa__title">
+                            Нужно ли платить за
+                            <br>баню отдельно?
+                        </div>
+                        <div class="qa__text">
+                            <span class="qa__bold">Баня абсолютно бесплатна.</span> Нет никаких ограничений в пользовании баней: дро- ва, подстилки, шапочки, полотенца, ве- ники — входят в стоимость. В это трудно поверить, но это так.
+                        </div>
+                        <a href="#" class="qa__button qa__button--curtail">Cвернуть</a>
                     </div>
                 </div>
                 <div class="qa__item--box d-flex">
                     <div class="qa__item--text d-flex">
-                        Не нашли ответа? Заполните форму, а мы свяжемся с Вами в ближайшее время и ответим на все вопросы 
+                        Не нашли ответа? Заполните форму, а мы свяжемся с Вами в ближайшее время и ответим на все вопросы ☺
                     </div>
                     <div class="qa__item--button-box d-flex">
                         <a href="#" data-remodal-target="modal-qa" class="button">Задать вопрос</a>
@@ -820,11 +897,11 @@
             </div>
             <div class="map__box">
                 <div class="map__left">
-                    <a href="#" class="map__phone">+7 (931) <span>201-80-40</span></a>
-                    <a href="#" class="map__phone">+7 (921) <span>900-92-94</span></a>
+                    <a href="tel:+79312018040" class="map__phone">+7 (931) <span>201-80-40</span></a>
+                    <a href="tel:+79219009294" class="map__phone">+7 (921) <span>900-92-94</span></a>
                 </div>
                 <div class="map__right">
-                    <a href="#" class="map__callback">Заказть<br> обратный<br> звонок</a>
+                    <a href="#" class="map__callback">Заказать<br> обратный<br> звонок</a>
                 </div>
             </div>
             <div class="map__time">
@@ -859,7 +936,7 @@
                 <br> обязательны к заполнению
             </div>
             <div class="form__check">
-                <input id="form__checkbox-4" class="form__checkbox" type="checkbox">
+                <input id="form__checkbox-4" class="form__checkbox" type="checkbox"  checked="checked">
                 <label for="form__checkbox-4">прочитал и согласен с <a href="#" class="form__checkbox-link">условиями<br> обработки персональных данных</a></label>
             </div>
             <button type="submit" class="button">Задать вопрос</button>
@@ -925,7 +1002,7 @@
                     <input type="text" class="form__input form__input--width-100" required>
                     <label for="#" class="form__label form__important form__label--input-label">Номер вашего телефона</label>
                 </div>
-                <textarea placeholder="Коментарий к брони" class="form__textarea form__textarea--small"></textarea>
+                <textarea placeholder="Комментарий к брони" class="form__textarea form__textarea--small"></textarea>
             </div>
             <div class="remodal__bottom d-flex">
                 <div class="remodal__text">
@@ -933,7 +1010,7 @@
                     <br> обязательны к заполнению
                 </div>
                 <div class="form__check">
-                    <input id="form__checkbox-4" class="form__checkbox" type="checkbox">
+                    <input id="form__checkbox-4" class="form__checkbox" type="checkbox"  checked="checked">
                     <label for="form__checkbox-4">прочитал и согласен с <a href="#" class="form__checkbox-link">условиями<br> обработки персональных данных</a></label>
                 </div>
                 <button type="submit" class="button">Задать вопрос</button>

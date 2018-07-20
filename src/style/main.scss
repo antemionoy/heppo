@@ -109,6 +109,7 @@ button {
     padding: 12px 18px 14px;
     border-radius: 50px;
     display: inline-block;
+    transition: 0.3s all ease;
     &:before {
         content: '';
         vertical-align: middle;
@@ -217,6 +218,9 @@ button {
         span {
             font-size: 30px;
             margin-left: 2px;
+        }
+        &--mobile {
+            display: none;
         }
     }
     &__callback {
@@ -785,6 +789,8 @@ button {
         background-color: #edeeee;
         font-size: 16px;
         border-radius: 50px;
+        transition: 0.3s all ease;
+
         &--check {
             text-transform: uppercase;
             color: #fff;
@@ -866,6 +872,8 @@ button {
         color: #fff;
         background-color: #abcb29;
         background: linear-gradient(90deg, #abcb29, #9fd430);
+        transition: 0.3s all ease;
+
         &--icon-rocket {
             &:before {
                 content: '';
@@ -1243,6 +1251,7 @@ input[type=radio]:checked~label {
         border-radius: 40px;
         width: 170px;
         height: 30px;
+        transition: .3s ease;
         &:before {
             content: '';
             display: inline-block;
@@ -1307,12 +1316,12 @@ input[type=radio]:checked~label {
         text-align: center;
     }
     &__grid {
-        justify-content: space-between;
+        justify-content: center;
         margin: 15px 0px 0px;
         flex-wrap: wrap;
     }
     &__item {
-        margin: 15px 0px 0px;
+        margin: 15px 4px 0px;
         flex: 0 1 265px;
         max-width: 265px;
         min-height: 340px;
@@ -1672,8 +1681,8 @@ input[type=radio]:checked~label {
         color: #363636;
         line-height: normal;
         font-weight: 400;
-        border-bottom: 1px dashed #9fa1a6;
         margin-left: 28px;
+        text-decoration: underline;
     }
 }
 
@@ -2176,7 +2185,7 @@ button.mfp-arrow-right {
 .hamburger {
     position: absolute;
     right: 15px;
-    top: 25px;
+    top: 18px;
     display: none;
     z-index: 100;
 }
@@ -2201,6 +2210,49 @@ button.mfp-arrow-right {
     -ms-transform: translateY(-8px) rotate(-45deg);
     -o-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);
+}
+
+// hover
+.header__callback:hover {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.menu__link:hover {
+    color: #000;
+}
+
+.main-carousel__button:hover {
+    opacity: .8;
+}
+
+.reviews__button:hover,
+.qa__button:hover {
+    transform: translateY(-3px);
+    transition: .3s ease;
+}
+
+.map__callback:hover {
+    text-decoration: none;
+}
+
+.button:hover,
+.form__button:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    border-radius: 20px;
+}
+
+.price__button--more:hover{
+    color:#a8c94a;
+}
+
+.price__button--check:hover{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    border-radius: 10px;
+}
+
+.social__link:hover{
+    opacity: .8;
 }
 
 @import "partials/media";

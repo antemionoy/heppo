@@ -7,7 +7,7 @@
     }
     .reviews {
         &__item {
-            flex: 0 0 50%;
+            flex: 1;
         }
     }
     .title-main {
@@ -21,9 +21,12 @@
     }
     .additionally__grid--three-element .additionally__text {
         flex: 1;
+        max-width: 100%;
     }
     .additionally__grid--four-element .additionally__text {
         flex: 1;
+        max-width: 100%;
+
     }
     .callback__text {
         font-size: 40px;
@@ -153,9 +156,15 @@
     button.mfp-arrow-right {
         right: 0;
     }
+
+    .discounts__circle{
+        width: 180px;
+        height: 180px;
+    }
+
     // header
     .logo {
-        width: 120px;
+        width: 100px;
     }
     .header {
         position: fixed;
@@ -166,12 +175,18 @@
         width: 100%;
         background-color: #fff;
         &__top {
-            padding: 15px 0px;
+            padding: 10px 0px;
         }
         &__number {
             font-size: 12px;
             span {
                 font-size: 14px;
+            }
+
+            &--mobile{
+                position: absolute;
+                top: 17px;
+                right: 170px;
             }
         }
         &__callback {
@@ -200,11 +215,13 @@
             &--address {
                 display: none;
             }
+
+
         }
         &__menu {
             flex-direction: column;
             justify-content: flex-start;
-            align-items: flex-start;
+            align-items: center;
             height: auto;
         }
         &__bottom {
@@ -223,10 +240,12 @@
         }
         .menu {
             &__link {
-                margin-bottom: 5px;
+                margin-bottom: 10px;
+                flex-direction: column;
+                align-items: center;
             }
             &__text {
-                font-size: 14px;
+                font-size: 16px;
             }
         }
         .header__col--center .header__item:last-child {
@@ -234,6 +253,7 @@
         }
         .hamburger {
             display: block;
+            right: 15px;
         }
         .wrapper {
             padding-top: 81px;
@@ -345,7 +365,13 @@
             padding-bottom: 10px;
         }
         &__text {
-            font-size: 14px;
+            font-size: 10px;
+            margin: 3px 0px 0px;
+            text-align: center;
+
+            br{
+                display: none;
+            }
         }
         &__title {
             font-size: 42px;
@@ -354,13 +380,16 @@
             font-size: 16px;
         }
         &__bottom {
-            flex-direction: column;
+            flex-wrap: wrap;
             margin: 20px 0px 0px;
             padding: 10px 0px 0px;
             justify-content: space-around;
-            align-items: flex-start;
+            align-items: baseline;
         }
-        &__item {}
+        &__item {
+            flex: 1 1;
+            flex-direction: column;
+        }
     }
     .main-carousel {
         &__button {
